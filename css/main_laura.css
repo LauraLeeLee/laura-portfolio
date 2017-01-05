@@ -1,0 +1,152 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #fae0f5;
+  text-align: center;
+  background: #b300b3;
+  background: -webkit-radial-gradient( #990099, #fff);
+  background: -o-radial-gradient(#990099, #fff);
+  background: -moz-radial-gradient(#990099, #fff);
+  background: radial-gradient(#990099, #fff);
+}
+
+hr {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: #fae0f5;
+  height: 1px;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  margin: 50px auto;
+  padding-bottom: 10px;
+  background: #333;
+  background: -webkit-radial-gradient(#c0c0c0, black);
+  background: -o-radial-gradient(#c0c0c0, black);
+  background: -moz-radial-gradient(#c0c0c0, black);
+  background: radial-gradient(#c0c0c0, black);
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 40px;
+}
+
+.title-logo {
+  margin: 0;
+  font-size: 5em;
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-muted {
+  color: #5a5858;
+  text-shadow: 2px 1px 5px white;
+}
+
+/*light border on hover for elements with a modal*/
+.img-responsive.project:hover,
+h1:hover {
+  box-shadow: 0 0 0 1px #fae0f5;
+}
+
+.modal-gradient {
+  background: #c0c0c0;
+  background: -webkit-radial-gradient(circle, #cc66ff #c0c0c0);
+  background: -o-radial-gradient(circle, #cc66ff, #c0c0c0);
+  background: -moz-radial-gradient(circle, #cc66ff, #c0c0c0);
+  background: radial-gradient(circle, #cc66ff, #c0c0c0);
+  color: black;
+}
+
+.modal_image {
+  width: 20vw;
+}
+
+#modal_laura,
+#modal_one,
+#modal_two,
+#modal_three {
+  font-size: 2.5em;
+}
+
+.modal-body p {
+  font-size: 1.35em;
+  padding-top: 1em;
+}
+
+.btn {
+  color: black;
+}
+
+footer {
+  padding-top: 50px;
+}
+
+/* social icons */
+[class*="entypo-"]:before {
+  color: white;
+  display: inline-block;
+  font-family: 'entypo', sans-serif;
+  font-size: 1.5em;
+  text-shadow: 3px 3px 3px black;
+  width: 1.5em;
+}
+
+/* main image carousel */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out 2s;
+  left: 0;
+  opacity: 0; /* hide all slides */
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 1; /* show first slide */
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+/*media queries */
+@media only screen and (min-width: 0) and (max-width: 990px) {
+  .container {
+    width: 90vw;
+  }
+
+  .project {
+    width: 50vw;
+  }
+}
