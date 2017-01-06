@@ -134,7 +134,7 @@ footer {
 }
 
 .carousel.fade .item {
-  transition: opacity ease-out 2s;
+  transition: opacity ease-out 3s;
   left: 0;
   opacity: 0; /* hide all slides */
   top: 0;
@@ -151,6 +151,14 @@ footer {
 
 .carousel.fade .item.active {
   opacity: 1;
+}
+
+.carousel-inner:hover {
+  box-shadow: 0 0 0 1px #fae0f5;
+  -webkit-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /*media queries */
